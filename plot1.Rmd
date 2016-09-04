@@ -22,10 +22,9 @@ rm(list = ls())
 
 
 ##### **Section 1: Upload data. Pre-process data.**
-
 ```{r, echo = TRUE}
 ### Upload data.
-
+library(utils)
 activity.monitoring.data <- read.table("activity.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE)
 ```
 
